@@ -98,8 +98,8 @@ A connection attempt failed because the connected party did not properly respond
 
 ## 3. Privacy（隐私扫描）
 
-扫描范围严格限定为 **`git ls-files` 实际列出的 54 个文件**（即真正准备公开的内容），
-未扫描 `.gitignore` 排除的构建目录与虚拟环境。
+扫描范围严格限定为 **`git ls-files` 实际列出的文件**（即真正准备公开的内容），
+首次提交为 54 个文件，加上本报告后为 55 个；未扫描 `.gitignore` 排除的构建目录与虚拟环境。
 
 扫描项与结果：
 
@@ -182,7 +182,7 @@ Python          : 3.10.11
 
 | 指标 | 数值 |
 | --- | --- |
-| tracked 文件数 | 54 |
+| tracked 文件数 | 54（首次提交）／55（含本报告） |
 | 最大 tracked 文件 | `docs/screenshots/11-responsive-1000.png`（60 KB） |
 | 超过 5 MB 的 tracked 文件 | 0 |
 | Git 仓库外的源码目录体积 | 约 1 MB（其中截图约 440 KB） |
