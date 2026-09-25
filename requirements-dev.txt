@@ -1,0 +1,7 @@
+-r requirements.txt
+
+# 测试
+pytest>=7,<10
+
+# 打包（build.bat 使用；版本上界避免构建环境随上游大版本漂移）
+pyinstaller>=6.22,<7
